@@ -1,3 +1,7 @@
+clear all;
+close all;
+clc;
+
 A = zeros(10, 10);
 for m = 1:10
     for n = 1:10

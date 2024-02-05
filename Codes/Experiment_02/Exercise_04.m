@@ -1,3 +1,7 @@
+clear all;
+close all;
+clc;
+
 vectorA = [1 3 5 7 0 0];
 vectorB = [-2 -5 6];
 
