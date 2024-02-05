@@ -1,8 +1,13 @@
-clear;
+clear all;
+close all;
 clc;
+
 t = linspace(0,2*pi,100);
 x = 3 + 6*cos(t);
 y = -2 + 9*sin(t);
+
+figure('Name','Equation figure parctice');
+
 plot(x,y);
 title('Graph of the equation');
 xlabel('Value of x');

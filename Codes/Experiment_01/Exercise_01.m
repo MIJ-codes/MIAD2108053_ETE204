@@ -1,5 +1,7 @@
-clear;
+clear all;
+close all;
 clc;
+
 %What are the values of 8/2 and 8\2
 a = 8 / 2;
 b = 8 \ 2;

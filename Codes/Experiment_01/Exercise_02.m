@@ -1,5 +1,7 @@
-clear;
+clear all;
+close all;
 clc;
+
 %Circuit problem
 E = 100 + 10 * j;
 IL = 5 + 5 * j;

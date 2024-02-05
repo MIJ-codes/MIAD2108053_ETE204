@@ -1,5 +1,7 @@
-clear;
+clear all;
+close all;
 clc;
+
 %A 6 by 8 matrix in which top, bottom, left, right is 0 and all the other
 %elements are 5
 A = zeros(6,8);

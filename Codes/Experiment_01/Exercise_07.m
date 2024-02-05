@@ -1,9 +1,13 @@
-clear;
+clear all;
+close all;
 clc;
+
 t = 0:0.05:5;
 x = exp(-0.8*t);
 y = cos(8*t);
 z = 10.*x.*y;
+
+figure('Name','Sub figure parctice');
 
 subplot(3,1,1), plot(t,x);
 title('Exponential graph');
