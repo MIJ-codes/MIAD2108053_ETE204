@@ -37,17 +37,20 @@ xlabel('Frequency (rad/s)');
 ylabel('Magnitude of Voltage (V)');
 savefig('Exercise_03_Figure_02.fig');
 
-% Calculate the phase of the voltage
-phase_V = atan(imag(V) / real(V));
+% Calculate the phase angle
+phase_V = angle(V);  % Calculate phase using angle function
 
-% Generate an array of voltage values
+% Generate an array of frequency values
 w_values = linspace(100, 20000, 1000);
+
+% Substitute w_values into the voltage expression (V depends on w)
 V_values = subs(V, w, w_values);
 
-% Plot the phase of the voltage using plot
+% Plot the phase of the voltage
 figure;
 plot(w_values, angle(V_values));
 title('Phase of Voltage vs Frequency');
 xlabel('Frequency (rad/s)');
 ylabel('Phase of Voltage (rad)');
 savefig('Exercise_03_Figure_03.fig');
+

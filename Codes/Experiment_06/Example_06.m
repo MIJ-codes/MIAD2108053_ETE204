@@ -12,7 +12,8 @@ title('x(n) signal');
 xlabel('n'); 
 ylabel('x(n)');
 
-m=n+2; y=x;
+m=n+2;
+y=x;
 
 subplot(2,1,2);
 stem(m,y); 

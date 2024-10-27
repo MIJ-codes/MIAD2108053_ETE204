@@ -5,7 +5,8 @@ clc;
 % Problem 1: Derivative
 syms a t b c
 expr = exp(-a*t)*sin(b*t + c);
-diff_expr = diff(expr, t)
+diff_expr = diff(expr, t);
+pretty (diff_expr);
 
 % Problem 2: Limits
 syms x
